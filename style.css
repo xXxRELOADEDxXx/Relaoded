@@ -1,0 +1,143 @@
+*{
+margin: 0;
+}
+
+body{
+	background-image:url("background.jpg");
+	background-repeat: repeat;
+	background-size:cover;
+	text-align:center;
+	grid-row-columns:100%;
+}
+
+.header{
+	width: 100%;
+	position: fixed;
+	top: 5px;
+	z-index:100;
+	display:flex;
+	justify-content: space-between;
+}
+
+
+nav{
+	display:flex;
+	justify-content: space-around;
+	background:black;
+	padding:10px;
+}
+
+nav button{
+	font-size: 70px;
+	font-family: monospace;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+nav button:hover{
+	background-color:black;
+	color: white;
+	opacity:70%;
+}
+
+.topStuff{
+	display:grid;
+	height:100%;
+	width: 90vw;
+	margin:none;
+	grid-template-columns: 60% 40%;
+}
+
+#blogPost{
+	font-size: 1.55vw;
+	width:100;
+	padding-top:50px;
+	padding-bottom:50px;
+	text-align: right;
+	border-bottom: 10px dashed white;
+	background:black;
+	opacity:80%;
+	text-shadow:
+		-2px -2px 0 #500,
+		2px -2px 0 #600,
+		-2px 2px 0 #500,
+		2px 2px 0 #600;
+
+}
+
+#blogPost h2{
+	text-align:left;
+}
+
+.topStuff img{
+	border-top: 10px solid black;
+	border-left:10px solid white;
+	border-bottom:10px solid black;
+	border-right: 10px solid white;
+	opacity: 100;
+	margin-top:50px;
+}
+
+.content{
+	padding:none;
+	width: 95vw;
+	background-image:url("./cool.jpeg");
+	background-size:cover;
+	display: grid;
+	grid-template-rows: 80% 20%; 
+	margin: 0;
+	margin-top: 220px;
+	position:relative;
+	left: 1.55vw;
+	text-align: center;
+	height: 75vh;
+	border-radius: 10px;
+	border: 10px solid black;
+}
+
+.content h1{
+	padding-top:10px;
+	color:white;
+	margin: auto;
+	font-size:4vw;
+	border-bottom:10px dashed white;
+	text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
+}
+
+.logos{
+	display: flex;
+	margin:auto;
+	padding: 10px;
+	width: 90%;
+	border-radius: 20px;
+	justify-content: space-around;
+}
+
+.logos img{
+	margin: auto;
+}
+
+.greeting{
+	color: white;
+	margin-top:none;
+	padding-left:none;
+	border-right: 10px dashed white;
+	width:100%;
+}
+
+.aLogo{
+	margin-top:5px;
+	border:10px solid black;
+	width: 220px;
+	background:white;
+	padding:10px;
+}
+@media screen and (max-width: 992px){
+	.logos{
+		left: 0.5vw;
+	}
+}
