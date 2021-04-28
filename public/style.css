@@ -19,9 +19,10 @@ body{
 
 
 nav{
-	display:flex;
-	justify-content: space-around;
+	display:grid;
 	margin:auto;
+	grid-template-columns:auto auto auto;
+	grid-template-rows:auto auto;
 	margin-top:0;
 	margin-right:10px;
 }
@@ -45,6 +46,24 @@ nav button:hover{
 	background-color:black;
 	color: white;
 	opacity:70%;
+}
+
+#links{
+	z-index:98;
+	background:black;
+	color:white;
+	font-size:30px;
+	display:none;
+}
+#links p{
+	padding: 5px;
+	border-top:3px dashed white;
+}
+#links a{
+	color:white;
+}
+#links a:hover{
+	color:grey;
 }
 
 .topStuff{
@@ -82,7 +101,22 @@ nav button:hover{
 	border-bottom:10px dashed black;
 	border-right: 10px dashed white;
 	opacity: 80%;
-	margin-top:50px;
+	margin:0;
+	margin-left:29px;
+}
+#pfpSection{
+	display:grid;
+	grid-template-columns: auto auto;
+}
+#rightSide{
+	display:grid;
+	grid-template-rows: auto auto;
+}
+#lowerTextSection{
+	color:white;
+	border-top: 10px dashed black;
+	font-size:1.15vw;
+	opacity:70%;
 }
 
 .content{
@@ -173,6 +207,11 @@ nav button:hover{
 	nav{
 		background:none;
 	}
+	.topStuff img{
+		height:150px;
+		width:150px;
+	}
+
 	.header img{
 		height:150px;
 		width:150px;
@@ -183,10 +222,6 @@ nav button:hover{
 		padding:0;
 		margin:0;
 
-	}
-	.topStuff img{
-		height:150px;
-		width:150px;
 	}
 	nav button{
 		font-size: 8vw;

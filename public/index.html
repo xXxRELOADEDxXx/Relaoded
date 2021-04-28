@@ -6,11 +6,23 @@
 	</head>
 	<body>
 		<div class = 'header'>
-			<img src="./reloadedLogo.png" height="200px" width="200px">
+			<a href='/'><img src="./reloadedLogo.png" height="200px" width="200px"></a>
 			<nav>
-				<button>Links</button>
-				<button>Merch</button>
-				<button>Media</button>
+				<button id="linkButton">Links</button>
+				<form action='/merch' method="GET">
+				<button type='submit'>Merch</button>
+				</form>
+				<form action='/media' method="GET">
+				<button type='submit'>Media</button>
+				</form>
+				<div id='links'>
+				<p>
+				<a href="https://trovo.live/xXxRELOADEDxXx">
+					Trovo</a></p>
+				<p>
+				<a href="https://github.com/xXxRELOADEDxXx">
+					GitHub</a></p>
+				</div>
 			</nav>
 		</div>	
 			<div class = "content">
@@ -25,10 +37,16 @@
 			<p>आफैंलाई बचाऊ</p>
 			</div>
 			</div>
-			<div>
+			<div id='rightSide'>
+			<div id ="pfpSection">
 			<img src="./badCheese.jpeg" height=200px width=200px>
 			<img src="./badCheese.jpeg" height=200px width=200px>
-
+			<img src="./badCheese.jpeg" height=200px width=200px>
+			<img src="./badCheese.jpeg" height=200px width=200px>
+			</div>
+			<div id='lowerTextSection'>
+			<h2>xXxRELOADEDxXx™ xXxRELOADEDxXx™ xXxRELOADEDxXx™</h2>
+			</div>
 			</div>
 			</div>
 			<div class='logos'>
@@ -50,6 +68,7 @@
 			</div>
 
 		</div>
-				
+		<script src="./toggleLinks.js"></script>		
 	</body>
+	
 </html>
