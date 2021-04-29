@@ -48,15 +48,22 @@ nav button:hover{
 	opacity:70%;
 }
 
-.links a{
-	font-size:37px;
+#links{
+	z-index:98;
+	background:black;
+	color:white;
+	font-size:30px;
+	display:none;
+}
+#links p{
+	padding: 5px;
+	border-top:3px dashed white;
+}
+#links a{
 	color:white;
 }
-
-.links{
-	text-align:center;
-	display:grid;
-	grid-template-columns:auto auto auto;
+#links a:hover{
+	color:grey;
 }
 
 .topStuff{
@@ -68,7 +75,7 @@ nav button:hover{
 }
 
 #blogPost{
-	font-size: 1.55vw;
+	font-size: 1.05vw;
 	width:100;
 	padding-top:50px;
 	padding-bottom:50px;
@@ -87,48 +94,37 @@ nav button:hover{
 #blogPost h2{
 	text-align:left;
 }
-
+#post2{
+	color:white;
+	margin:auto;
+	margin-top:50px;
+	margin-left:28px;
+	font-weight:bolder;
+	font-size:50px;
+}
 .topStuff img{
 	border-top: 10px dashed black;
 	border-left:10px dashed white;
 	border-bottom:10px dashed black;
 	border-right: 10px dashed white;
-	opacity: 80%;
 	border-radius:25px;
-	width:280px;
-	height:280px;
 	margin-top:30px;
 	margin-bottom:0px;
 	margin-left:4.45vw;
 	margin-right:0px;
 }
-#pfpSection{
-	grid-template-columns: auto auto auto;
-}
-#rightSide{
-	display:grid;
-	grid-template-rows: auto auto;
-}
-#lowerTextSection{
-	color:white;
-	border-top: 10px dashed black;
-	font-size:1.15vw;
-	opacity:70%;
-}
 
 .content{
 	padding:none;
 	width: 95vw;
-	background-image:url("./cool.jpeg");
-	background-size:cover;
+	background-image:url("./background.jpg");
+	background-repeat:repeat-y;
 	display: grid;
-	grid-template-rows: 80% 20%; 
 	margin: 0;
 	margin-top: 150px;
 	position:relative;
 	left: 1.55vw;
 	text-align: center;
-	height: 82vh;
 	border-radius: 10px;
 	border: 10px solid black;
 }
@@ -146,18 +142,6 @@ nav button:hover{
 		2px 2px 0 #000;
 }
 
-.logos{
-	display: flex;
-	margin:auto;
-	padding: 10px;
-	width: 90%;
-	border-radius: 20px;
-	justify-content: space-between;
-}
-
-.logos img{
-	margin: auto;
-}
 
 .greeting{
 	color: white;
@@ -166,35 +150,16 @@ nav button:hover{
 	border-right: 10px dashed white;
 	width:100%;
 }
-
-.aLogo{
-	margin-top:5px;
-	border:10px solid black;
-	width: 220px;
-	background:white;
-	padding:10px;
+#itemOnSale{
+	color:white;
+	display:grid;
+	grid-template-rows: auto auto;
+	font-size:2vw;
 }
-.aLogo:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
+#itemOnSale img{
+	margin:auto;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 @media screen and (max-width: 992px){
 	nav button{
 		font-size: 8.5vw;
@@ -209,16 +174,20 @@ nav button:hover{
 		height:150px;
 		width:150px;
 	}
+	.galary img{
+		width:320px;
+		height:250px;
 	}
-@media screen and (max-width: 900px){
-	.aLogo{
-		padding:0;
-		margin:0;
 
 	}
+@media screen and (max-width: 900px){
 	.topStuff img{
 		height: 250px;
 		width: 250px;
+	}
+	#itemOnSale img{
+		height:300px;
+		width:222px;
 	}
 	nav button{
 		font-size: 8vw;

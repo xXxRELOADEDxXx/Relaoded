@@ -48,24 +48,9 @@ nav button:hover{
 	opacity:70%;
 }
 
-#links{
-	z-index:98;
-	background:black;
-	color:white;
-	font-size:30px;
-	display:none;
+.links a{
+	font-size: 50px;
 }
-#links p{
-	padding: 5px;
-	border-top:3px dashed white;
-}
-#links a{
-	color:white;
-}
-#links a:hover{
-	color:grey;
-}
-
 .topStuff{
 	display:grid;
 	height:100%;
@@ -91,6 +76,10 @@ nav button:hover{
 
 }
 
+#blogPost a{
+	color:black;
+}
+
 #blogPost h2{
 	text-align:left;
 }
@@ -113,7 +102,6 @@ nav button:hover{
 	background-image:url("./cool.jpeg");
 	background-size:cover;
 	display: grid;
-	grid-template-rows: 80% 20%; 
 	margin: 0;
 	margin-top: 150px;
 	position:relative;
