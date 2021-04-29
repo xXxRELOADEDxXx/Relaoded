@@ -100,10 +100,7 @@ nav button:hover{
 	border-left:10px dashed white;
 	border-bottom:10px dashed black;
 	border-right: 10px dashed white;
-	opacity: 80%;
 	border-radius:25px;
-	width:280px;
-	height:280px;
 	margin-top:30px;
 	margin-bottom:0px;
 	margin-left:4.45vw;
@@ -148,8 +145,16 @@ nav button:hover{
 	border-right: 10px dashed white;
 	width:100%;
 }
-
+#itemOnSale{
+	color:white;
+	display:grid;
+	grid-template-rows: auto auto;
+	font-size:2vw;
 }
+#itemOnSale img{
+	margin:auto;
+}
+
 @media screen and (max-width: 992px){
 	nav button{
 		font-size: 8.5vw;
@@ -169,6 +174,10 @@ nav button:hover{
 	.topStuff img{
 		height: 250px;
 		width: 250px;
+	}
+	#itemOnSale img{
+		height:300px;
+		width:222px;
 	}
 	nav button{
 		font-size: 8vw;
